@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\X\\STConnection\\Báo cáo\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj": {}
+    "D:\\X\\STConnection\\Bao_Cao\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj": {}
   },
   "projects": {
-    "D:\\X\\STConnection\\Báo cáo\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj": {
+    "D:\\X\\STConnection\\Bao_Cao\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\X\\STConnection\\Báo cáo\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj",
+        "projectUniqueName": "D:\\X\\STConnection\\Bao_Cao\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj",
         "projectName": "AdminTemplate_User",
-        "projectPath": "D:\\X\\STConnection\\Báo cáo\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj",
+        "projectPath": "D:\\X\\STConnection\\Bao_Cao\\2\\AdminTemplate_User\\AdminTemplate_User\\AdminTemplate_User.csproj",
         "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-        "outputPath": "D:\\X\\STConnection\\Báo cáo\\2\\AdminTemplate_User\\AdminTemplate_User\\obj\\",
+        "outputPath": "D:\\X\\STConnection\\Bao_Cao\\2\\AdminTemplate_User\\AdminTemplate_User\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

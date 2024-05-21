@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<AdminTemplate_User.Models.User>
+@{
+    Layout = "_Layout";
+}
+
+
+
+<div class="content">
+    <div class="row mt-3">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4">
+                <div class="card card border border-dark shadow-sm">
+                    <div class="card-header card-header bg-dark text-white border-bottom-0 d-flex flex-wrap">
+                        <h6 class="mb-0">@item.Id - @item.Name</h6>
+                        <div class="d-inline-flex ms-auto">
+                            <a class="text-body" data-card-action="collapse">
+                                <i class="ph-caret-down"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="collapse show" style="">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4 fw-bold">
+                                    <p>Name: </p>
+                                    <p>Birthday: </p>
+                                    <p>Gender: </p>
+                                    <p>Class: </p>
+                                    <p>Email: </p>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p>@item.Name</p>
+                                    <p>@item.Birthday.ToShortDateString()</p>
+                                    @if (item.Gender == 0)
+                                    {
+                                        <p>Nam</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Nữ</p>
+                                    }
+                                    <p>@item.Class</p>
+                                    <p>@item.Email</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
